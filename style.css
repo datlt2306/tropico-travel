@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'the_voyage_culturescript';
+    src: url('./fonts/the_voyage_culture_script-webfont.woff2') format('woff2'),
+        url('./fonts/the_voyage_culture_script-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --primary-color: #1e511d;
+    /* --secondary-color: #f9f3f3;
+    --tertiary-color: #f9f3f3;
+    --quaternary-color: #000; */
+}
+/* COMMON CLASS */
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.banner__title {
+    font-size: 72px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.banner__subtitle {
+    font-family: 'the_voyage_culturescript', sans-serif;
+    font-size: 60px;
+    color: #fff;
+    margin-top: 74px;
+}
+.banner-wrapper {
+    background-image: url('./images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+}
+.search-wrapper {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+/* HEADER SECTION */
+.section-header {
+    padding: 30px 0px;
+}
+.section-header__title {
+    font-size: 60px;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-top: -3px;
+    letter-spacing: 0.3px;
+}
+.section-header__subtitle {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+
+/* FEATURE CATEGORIES */
+.feature-categories {
+    background: url('./images/banner2.jpg') no-repeat top center/cover;
+    margin-bottom: 83px;
+}
+.feature-category-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 13px;
+}
+.feature-category-item:hover .post__content {
+    background: rgba(60, 165, 58, 0.5);
+}
+.feature-category-item .post__content {
+    transition: all 0.3s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('./images/bg-rounded.png') no-repeat center/cover;
+}
+.feature-category-item .post__thumbnail {
+    transition: all 0.5s;
+}
+.feature-category-item:hover .post__thumbnail {
+    transform: scale(1.05);
+}
+.feature-category-item .post__title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+/* FAVORITE TOUR */
+.favorite-tour {
+    background: url('./images/banner3.jpg') no-repeat top center/cover;
+}
+
+/* FOOTER */
+footer {
+    background: #222222;
+}

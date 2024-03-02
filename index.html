@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary sticky">
+                <div class="container-fluid d-lg-flex justify-content-lg-between">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/logo.png" alt="" />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse justify-content-lg-center"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Destinations
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Type of trip
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                        </ul>
+                        <div class="ml-auto">
+                            <button class="btn btn-primary">Login</button>
+                            <button class="btn btn-primary">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="banner-wrapper">
+            <div class="container">
+                <section class="banner">
+                    <h3 class="banner__title">Your next trip</h3>
+                    <h2 class="banner__subtitle">Will be unforgettable!</h2>
+                </section>
+                <section class="search-wrapper">
+                    <form
+                        class="row row-cols-lg-auto g-3 align-items-center justify-content-center my-5"
+                    >
+                        <div class="col-12">
+                            <div class="input-group">
+                                <span class="input-group-text">@</span>
+                                <select class="form-select" id="from" c>
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <span>Or</span>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="input-group">
+                                <span class="input-group-text">@</span>
+                                <select class="form-select" id="to" c>
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <section class="feature-categories">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h3 class="section-header__subtitle">THE WORLD</h3>
+                    <h2 class="section-header__title">DEPEND ON YOUR DESIRES</h2>
+                </div>
+                <div class="section-body">
+                    <div class="row">
+                        <div class="col" data-aos="fade-up" data-aos-duration="1000">
+                            <article class="feature-category-item card border-0 relative post">
+                                <div class="thumbnail-wrapper thumbnail-zoom">
+                                    <img
+                                        src="./images/tours/hoi-an.png"
+                                        class="card-img post__thumbnail"
+                                        alt="..."
+                                    />
+                                </div>
+
+                                <div class="card-img-overlay post__content">
+                                    <h5 class="card-title post__title">Classic Tour</h5>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col" data-aos="fade-up" data-aos-duration="1300">
+                            <article class="feature-category-item card border-0 post">
+                                <div class="thumbnail-wrapper thumbnail-zoom">
+                                    <img
+                                        src="./images/tours/family-tour.png"
+                                        class="card-img post__thumbnail"
+                                        alt="Family Tour"
+                                    />
+                                </div>
+                                <div class="card-img-overlay post__content">
+                                    <h5 class="card-title post__title">Family Tour</h5>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col" data-aos="fade-up" data-aos-duration="1600">
+                            <article class="feature-category-item card border-0 post">
+                                <div class="thumbnail-wrapper thumbnail-zoom">
+                                    <img
+                                        src="./images/tours/combine-tour.png"
+                                        class="card-img post__thumbnail"
+                                        alt="Combine Tour"
+                                    />
+                                </div>
+                                <div class="card-img-overlay post__content">
+                                    <h5 class="card-title post__title">Combine Tour</h5>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col" data-aos="fade-up" data-aos-duration="1900">
+                            <article class="feature-category-item card border-0 post">
+                                <div class="thumbnail-wrapper thumbnail-zoom">
+                                    <img
+                                        src="./images/tours/honeymoon.png"
+                                        class="card-img post__thumbnail"
+                                        alt="Honeymoon Tour"
+                                    />
+                                </div>
+                                <div class="card-img-overlay post__content">
+                                    <h5 class="card-title post__title">Honeymoon Tour</h5>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="favorite-tour">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="section-header__subtitle">YOUR FAVORITE</h3>
+                    <h2 class="section-header__title">INDOCHINA TRIP</h2>
+                </div>
+                <div class="section-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <article class="card mb-3 p-3 shadow post">
+                                <div class="row g-1">
+                                    <div class="col-md-4 post__thumbnail">
+                                        <img
+                                            src="./images//tours/qiongru-192115112148-15-dieu-khong-the-bo-qua-khi-den-Siem-Reap-Campuchia.jpg"
+                                            class="img-fluid rounded-start"
+                                            alt="..."
+                                        />
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body post__content">
+                                            <h5 class="card-title post__title">
+                                                VOYAGE EN FAMILLE AU VIETNAM
+                                            </h5>
+                                            <div class="meta post__meta">
+                                                <p class="card-text post__destination">
+                                                    Destination : Vietnam, Laos
+                                                </p>
+                                                <p class="card-text post__duration">
+                                                    Duration : 9 days
+                                                </p>
+                                            </div>
+
+                                            <p class="post__excerpt">
+                                                Un parcours dense et contrasté au Vietnam, du Nord
+                                                au Sud, peaufiné par plus de 25 ans d'exercice : ses
+                                                ...
+                                            </p>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center post__footer"
+                                            >
+                                                <a
+                                                    href=""
+                                                    class="btn btn-outline-primary rounded-pill post__link"
+                                                    >View Tour</a
+                                                >
+                                                <span class="post__price">$3800</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="card mb-3 p-3 shadow post">
+                                <div class="row g-1">
+                                    <div class="col-md-4 post__thumbnail">
+                                        <img
+                                            src="./images//tours/qiongru-192115112148-15-dieu-khong-the-bo-qua-khi-den-Siem-Reap-Campuchia.jpg"
+                                            class="img-fluid rounded-start"
+                                            alt="..."
+                                        />
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body post__content">
+                                            <h5 class="card-title post__title">
+                                                VOYAGE EN FAMILLE AU VIETNAM
+                                            </h5>
+                                            <div class="meta post__meta">
+                                                <p class="card-text post__destination">
+                                                    Destination : Vietnam, Laos
+                                                </p>
+                                                <p class="card-text post__duration">
+                                                    Duration : 9 days
+                                                </p>
+                                            </div>
+
+                                            <p class="post__excerpt">
+                                                Un parcours dense et contrasté au Vietnam, du Nord
+                                                au Sud, peaufiné par plus de 25 ans d'exercice : ses
+                                                ...
+                                            </p>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center post__footer"
+                                            >
+                                                <a
+                                                    href=""
+                                                    class="btn btn-outline-primary rounded-pill post__link"
+                                                    >View Tour</a
+                                                >
+                                                <span class="post__price">$3800</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-6">
+                            <div class="card p-3 post">
+                                <img
+                                    src="./images/tours/Untitled-1.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title post__title">
+                                        VOYAGE EN FAMILLE AU VIETNAM
+                                    </h5>
+                                    <div class="meta post__meta">
+                                        <p class="card-text post__destination">
+                                            Destination : Vietnam, Laos
+                                        </p>
+                                        <p class="card-text post__duration">Duration : 9 days</p>
+                                    </div>
+                                    <p class="post__excerpt">
+                                        Un parcours dense et contrasté au Vietnam, du Nord au Sud,
+                                        peaufiné par plus de 25 ans d'exercice : ses ...
+                                    </p>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center post__footer"
+                                    >
+                                        <a
+                                            href=""
+                                            class="btn btn-outline-primary rounded-pill post__link"
+                                            >View Tour</a
+                                        >
+                                        <span class="post__price">$3800</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card p-3 post">
+                                <div class="thumbnail-wrapper thumbnail-zoom">
+                                    <img
+                                        src="./images/tours/Untitled-1.jpg"
+                                        class="card-img-top"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title post__title">
+                                        VOYAGE EN FAMILLE AU VIETNAM
+                                    </h5>
+                                    <div class="meta post__meta">
+                                        <p class="card-text post__destination">
+                                            Destination : Vietnam, Laos
+                                        </p>
+                                        <p class="card-text post__duration">Duration : 9 days</p>
+                                    </div>
+                                    <p class="post__excerpt">
+                                        Un parcours dense et contrasté au Vietnam, du Nord au Sud,
+                                        peaufiné par plus de 25 ans d'exercice : ses ...
+                                    </p>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center post__footer"
+                                    >
+                                        <a
+                                            href=""
+                                            class="btn btn-outline-primary rounded-pill post__link"
+                                            >View Tour</a
+                                        >
+                                        <span class="post__price">$3800</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <article class="card mb-3 p-3 shadow post">
+                                <div class="row g-1">
+                                    <div class="col-md-4 post__thumbnail">
+                                        <img
+                                            src="./images//tours/qiongru-192115112148-15-dieu-khong-the-bo-qua-khi-den-Siem-Reap-Campuchia.jpg"
+                                            class="img-fluid rounded-start"
+                                            alt="..."
+                                        />
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body post__content">
+                                            <h5 class="card-title post__title">
+                                                VOYAGE EN FAMILLE AU VIETNAM
+                                            </h5>
+                                            <div class="meta post__meta">
+                                                <p class="card-text post__destination">
+                                                    Destination : Vietnam, Laos
+                                                </p>
+                                                <p class="card-text post__duration">
+                                                    Duration : 9 days
+                                                </p>
+                                            </div>
+
+                                            <p class="post__excerpt">
+                                                Un parcours dense et contrasté au Vietnam, du Nord
+                                                au Sud, peaufiné par plus de 25 ans d'exercice : ses
+                                                ...
+                                            </p>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center post__footer"
+                                            >
+                                                <a
+                                                    href=""
+                                                    class="btn btn-outline-primary rounded-pill post__link"
+                                                    >View Tour</a
+                                                >
+                                                <span class="post__price">$3800</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="card mb-3 p-3 shadow post">
+                                <div class="row g-1">
+                                    <div class="col-md-4 post__thumbnail">
+                                        <img
+                                            src="./images//tours/qiongru-192115112148-15-dieu-khong-the-bo-qua-khi-den-Siem-Reap-Campuchia.jpg"
+                                            class="img-fluid rounded-start"
+                                            alt="..."
+                                        />
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body post__content">
+                                            <h5 class="card-title post__title">
+                                                VOYAGE EN FAMILLE AU VIETNAM
+                                            </h5>
+                                            <div class="meta post__meta">
+                                                <p class="card-text post__destination">
+                                                    Destination : Vietnam, Laos
+                                                </p>
+                                                <p class="card-text post__duration">
+                                                    Duration : 9 days
+                                                </p>
+                                            </div>
+
+                                            <p class="post__excerpt">
+                                                Un parcours dense et contrasté au Vietnam, du Nord
+                                                au Sud, peaufiné par plus de 25 ans d'exercice : ses
+                                                ...
+                                            </p>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center post__footer"
+                                            >
+                                                <a
+                                                    href=""
+                                                    class="btn btn-outline-primary rounded-pill post__link"
+                                                    >View Tour</a
+                                                >
+                                                <span class="post__price">$3800</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h3 class="section-header__subtitle">CREATOR OF</h3>
+                    <h2 class="section-header__title">THE MOST BEAUTIFUL TRIPS</h2>
+                </div>
+            </div>
+        </section>
+        <section class="reason">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="section-header__subtitle">WHY</h3>
+                    <h2 class="section-header__title">CHOOSE US</h2>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">Home</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">Features</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">Pricing</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">FAQs</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">About</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">Home</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">Features</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">Pricing</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">FAQs</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">About</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">Home</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">Features</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">Pricing</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">FAQs</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">About</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden"
+                                    >Email address</label
+                                >
+                                <input
+                                    id="newsletter1"
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Email address"
+                                />
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                                <div
+                                    data-lastpass-icon-root=""
+                                    style="
+                                        position: relative !important;
+                                        height: 0px !important;
+                                        width: 0px !important;
+                                        float: left !important;
+                                    "
+                                ></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div
+                    class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+                >
+                    <p>© 2024 Company, Inc. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3">
+                            <a class="link-body-emphasis" href="#"> </a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="link-body-emphasis" href="#"></a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="link-body-emphasis" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
