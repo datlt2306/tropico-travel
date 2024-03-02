@@ -23,6 +23,15 @@
     top: 0;
     width: 100%;
 }
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
 body {
     font-family: 'Poppins', sans-serif;
 }
