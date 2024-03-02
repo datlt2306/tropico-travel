@@ -18,8 +18,17 @@
 .absolute {
     position: absolute;
 }
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 body {
     font-family: 'Poppins', sans-serif;
+}
+.banner {
+    max-width: 80%;
+    margin: auto;
 }
 .banner__title {
     font-size: 72px;
@@ -31,6 +40,7 @@ body {
     font-size: 60px;
     color: #fff;
     margin-top: 74px;
+    margin-left: 120px;
 }
 .banner-wrapper {
     background-image: url('./images/banner.jpg');
@@ -69,6 +79,7 @@ body {
 .feature-categories {
     background: url('./images/banner2.jpg') no-repeat top center/cover;
     margin-bottom: 83px;
+    padding-top: 40px;
 }
 .feature-category-item {
     position: relative;
@@ -152,6 +163,11 @@ body {
 .tour-item .tour__excerpt {
     line-height: 22px;
 }
+.tour-item .tour__price {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
 .btn-outline-primary {
     padding: 13px 38px;
     border-radius: 20px;
@@ -165,7 +181,42 @@ body {
     background: var(--primary-color);
     color: #fff;
 }
+/* TESTIMONIAL */
+.testimonial-item {
+    padding: 30px 0 0px 0;
+    margin: auto;
+    background: url(./images/bg-fb2.png) no-repeat top right;
+    background-size: contain;
+}
+.testimonial-item__image {
+    position: relative;
+    -webkit-mask-image: url('./images/bg-fb-dup.png') center center;
+    mask-image: url('./images/bg-fb-dup.png');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+}
+.testimonial-item__content {
+    padding-top: 60px;
+    font-size: 15px;
+    padding-right: 20%;
+    color: var(--quaternary-color);
+    /* position: relative;
+    background-color: #ccc;
+    -webkit-mask-image: url('./images/bg-fb2.png') center center;
+    mask-image: url('./images/bg-fb2.png');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat; */
+}
+
 /* FOOTER */
 footer {
     background: #222222;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
