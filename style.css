@@ -7,9 +7,9 @@
 }
 :root {
     --primary-color: #1e511d;
-    /* --secondary-color: #f9f3f3;
+    --secondary-color: #f9f3f3;
     --tertiary-color: #f9f3f3;
-    --quaternary-color: #000; */
+    --quaternary-color: #222222;
 }
 /* COMMON CLASS */
 .relative {
@@ -91,10 +91,16 @@ body {
     justify-content: center;
     background: url('./images/bg-rounded.png') no-repeat center/cover;
 }
-.feature-category-item .post__thumbnail {
-    transition: all 0.5s;
+.thumbnail-wrapper {
+    overflow: hidden;
 }
-.feature-category-item:hover .post__thumbnail {
+.thumbnail-wrapper .post__thumbnail {
+    transition: all 0.3s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.thumbnail-zoom:hover .post__thumbnail {
     transform: scale(1.05);
 }
 .feature-category-item .post__title {
@@ -102,11 +108,63 @@ body {
     font-weight: 500;
     color: #fff;
 }
+.feature-category-item .post__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+}
 /* FAVORITE TOUR */
 .favorite-tour {
     background: url('./images/banner3.jpg') no-repeat top center/cover;
 }
-
+/* TOUR */
+.tour-item {
+    border-radius: 20px;
+    padding: 23px;
+    border: 1px solid #eee;
+    margin-bottom: 30px;
+}
+.tour-item .tour__title a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--quaternary-color);
+    margin-bottom: 10px;
+}
+.tour-item .tour__content {
+    padding: 0;
+    padding-top: 10px;
+}
+.tour-item .tour__meta label {
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.tour-item .tour__destination {
+    margin-bottom: 10px;
+}
+.tour-item .tour__duration {
+    margin-bottom: 10px;
+}
+.tour-item .tour__excerpt {
+    line-height: 22px;
+}
+.btn-outline-primary {
+    padding: 13px 38px;
+    border-radius: 20px;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn-outline-primary:hover {
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+    color: #fff;
+}
 /* FOOTER */
 footer {
     background: #222222;
